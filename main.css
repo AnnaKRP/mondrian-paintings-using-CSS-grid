@@ -1,116 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Allura&family=Buda:wght@300&family=Carter+One&family=Fondamento:ital@0;1&family=Fugaz+One&family=Gideon+Roman&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pattaya&family=Potta+One&family=Quando&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Allura&family=Buda:wght@300&family=Carter+One&family=Fondamento:ital@0;1&family=Fugaz+One&family=Gideon+Roman&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pattaya&family=Potta+One&family=Quando&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    background-color: #f1e8e6;
-    color: #361d32;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
+  background-color: #f1e8e6;
+  color: #361d32;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 h1 {
-    background-color: #f55951;
-    color: #f1e8e6;
-    text-align: center;
-    padding: 15px;
-    margin: 0 0 30px 0;
-    letter-spacing: 0.2em;
+  background-color: #f55951;
+  color: #f1e8e6;
+  text-align: center;
+  padding: 15px;
+  margin: 0 0 30px 0;
+  letter-spacing: 0.2em;
+}
+
+#short-description {
+    background-color: #f8f4f3;
+    width: 80%;
+    font-size: 22px;
+    padding: 2em;
+    margin: 10px auto 40px auto;
+    box-shadow: #361d32 0px 20px 30px -10px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 details {
-    margin: 20px 40px 0px 40px;
+  margin: 20px 40px 0px 40px;
 }
 
 details summary {
-    width: max-content;
-    font-size: 20px;
-    cursor: pointer;
-    transition: border-bottom 0.3s ease;
-    border-bottom: 5px solid transparent;
+  width: max-content;
+  font-size: 20px;
+  cursor: pointer;
+  transition: border-bottom 0.3s ease;
+  border-bottom: 5px solid transparent;
 }
 
 details summary:hover {
-    border-bottom: 5px solid #f55951;
+  border-bottom: 5px solid #f55951;
 }
 
 #container-one,
-#container-two {
-    background-color: black;
-    width: 700px;
-    height: 700px;
-    margin: 40px auto 30px auto;
-    display: grid;
-    gap: 9px;
-    outline: 1px solid #edd2cb;
-    outline-offset: 35px;
-    border-radius: 1px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+#container-two,
+#container-three {
+  background-color: black;
+  width: 700px;
+  height: 700px;
+  margin: 40px auto 30px auto;
+  display: grid;
+  gap: 9px;
+  outline: 1px solid #edd2cb;
+  outline-offset: 35px;
+  border-radius: 1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #container-one {
-    grid-template-columns: 310px 180px 143px 40px;
-    grid-template-rows: 395px 115px 151px 12px;
+  grid-template-columns: 310px 180px 143px 40px;
+  grid-template-rows: 395px 115px 151px 12px;
 }
 
 #container-two {
-    grid-template-columns: 200px 362px 120px;
-    grid-template-rows: 225px 230px 227px;
+  grid-template-columns: 200px 362px 120px;
+  grid-template-rows: 225px 230px 227px;
+}
+
+#container-three {
+  grid-template-columns: 25px 235px 176px 237px;
+  grid-template-rows: 40px 160px 85px 150px 200px 20px;
 }
 
 .grid-item {
-    background-color: floralwhite;
+  background-color: floralwhite;
 }
 
 /* painting one */
 
 #container-one .one {
-    background-color: firebrick;
+  background-color: firebrick;
 }
 
 #container-one .two {
-    grid-column: 2 / 5;
+  grid-column: 2 / 5;
 }
 
 #container-one .three {
-    grid-row: 2 / 4;
+  grid-row: 2 / 4;
 }
 
 #container-one .four {
-    grid-area: 2 / 2 / 4 / 4;
+  grid-area: 2 / 2 / 4 / 4;
 }
 
 #container-one .five {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
 #container-one .six {
-    grid-row: 3 / 5;
+  grid-row: 3 / 5;
 }
 
 #container-one .eight {
-    background-color: gold;
+  background-color: gold;
 }
 
 /* painting two */
 
 #container-two .one {
-    background-color: firebrick;
+  background-color: firebrick;
 }
 
 #container-two .two {
-    grid-area: 1 / 2 / 3 / 4;
+  grid-area: 1 / 2 / 3 / 4;
 }
 
 #container-two .four {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
 #container-two .six {
-    background-color: gold;
+  background-color: gold;
 }
+
+/* painting three */
+
+#container-three .one {
+  grid-column: span 2;
+}
+
+#container-three .four {
+  background-color: firebrick;
+}
+
+#container-three .eight {
+  background-color: firebrick;
+}
+
+#container-three .twelve {
+  background-color: firebrick;
+}
+
+#container-three .sixteen {
+  grid-area: 5 / 1 / 7 / 3;
+}
+
+#container-three .eighteen {
+  grid-row: span 2;
+}
+
